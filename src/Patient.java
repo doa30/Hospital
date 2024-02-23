@@ -18,6 +18,8 @@ public class Patient {
         this.medicalDepartment = medicalDepartment;
     }
 
+    public Patient() { }
+
     public String getTCKN() {
         return TCKN;
     }
@@ -89,12 +91,8 @@ public class Patient {
         int currentyear=currentDate.getYear();
 
         if(currentyear>=year) {
-            if (currentmonth < month) age = (currentyear - year) - 1;
-            if (currentmonth > month) age = (currentyear - year);
-            if (currentmonth == month) {
-                if (currentday >= day) age = (currentyear - year);
-                else age = (currentyear - year);
-            }
+            if (currentmonth < month||(currentmonth==month&&currentday<day)) age = (currentyear - year) - 1;
+            if (currentmonth > month||(currentmonth==month&&currentday>=day)) age = (currentyear - year);
         }
         else age=-1;
         return age;

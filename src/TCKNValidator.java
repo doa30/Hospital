@@ -39,10 +39,7 @@ public class TCKNValidator {
 
     private List<Integer> ConvertTCKNToIntegerList(String TCKN)
     {
-
         List<Integer> tckn=new ArrayList<>();
-
-
         for(int i=0; i<TCKN.length(); i++)
         {
             char charAtIndex=TCKN.charAt(i);
