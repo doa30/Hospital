@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aea6f38-4b79-42ae-924c-a01fe96e053b" name="Changes" comment="added;&#10;-TCKN Validator&#10;-Patient and MedicalDepartment objects" />
+    <list default="true" id="4aea6f38-4b79-42ae-924c-a01fe96e053b" name="Changes" comment="-added new git modifications">
+      <change afterPath="$PROJECT_DIR$/src/BirthDateValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TCKNValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TCKNValidator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708675187269</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-added new git modifications">
+      <option name="closed" value="true" />
+      <created>1708675640833</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708675640833</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added;&#10;-TCKN Validator&#10;-Patient and MedicalDepartment objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="added;&#10;-TCKN Validator&#10;-Patient and MedicalDepartment objects" />
+    <MESSAGE value="-added new git modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="-added new git modifications" />
   </component>
 </project>
