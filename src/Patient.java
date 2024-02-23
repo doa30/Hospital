@@ -79,7 +79,7 @@ public class Patient {
 
     private int findAge(LocalDate birthdate){
         int age=0;
-        String [] date=birthdate.toString().split("-");
+        String [] date=getBirthdate().toString().split("-");
         int day= Integer.parseInt(date[2]);
         int month=Integer.parseInt(date[1]);
         int year=Integer.parseInt(date[0]);

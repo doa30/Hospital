@@ -32,27 +32,8 @@ public class Main {
         String Name = scanner.nextLine();
         System.out.print("Please enter your surname: ");
         String Surname = scanner.nextLine();
-
-       LocalDate birthDate;
-
-        do {
-            System.out.print("Please enter your birthdate (yyyy-MM-dd): ");
-            String BirthDate = scanner.nextLine();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-            birthDate = LocalDate.parse(BirthDate, formatter);
-            BirthDateValidator birthDateValidator=new BirthDateValidator();
-            isBirthDateValid=birthDateValidator.isDateValid(birthDate);
-
-            if (!isBirthDateValid) {
-                System.out.println("Invalid birthdate. Please try again. ");
-            }
-
-            if (invalidCounter == 3) {
-                System.out.println("\nYou are blocked from the system due to entering a wrong birthdate. Please try again later.");
-                System.exit(0);
-            }
-        } while (!isBirthDateValid);
-
+        System.out.print("Please enter your birthdate (yyyy-MM-dd): ");
+        String BirthDate = scanner.nextLine();
         System.out.print("Please enter your Gender: ");
         String Gender = scanner.nextLine();
         System.out.print("Please enter your choice of hospital: ");
@@ -62,6 +43,8 @@ public class Main {
         System.out.print("Please enter your choice of doctor: ");
         String Doctor = scanner.nextLine();
 
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate birthDate = LocalDate.parse(BirthDate, formatter);
 
         MedicalDepartment medicalDepartment=new MedicalDepartment(Department, Hospital, Doctor);
 

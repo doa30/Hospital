@@ -19,7 +19,7 @@ public class MedicalDepartment {
 
     public void displayDepartmentInfo()
     {
-        System.out.println("Hospital: "+getHospital()+
+        System.out.println("Hospital: "+getHospital()+"\n"+
                            "Medical Department: " + getDepartment()+"\n"+
                            "Doctor: "+getDoctor());
     }
